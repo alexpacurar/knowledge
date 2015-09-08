@@ -131,10 +131,6 @@ That's Linux boot in a nutshell. Now let's dig in a little further and explore s
 
 **Resources**
 http://www.ibm.com/developerworks/library/l-linuxboot/
+
 http://www.ibm.com/developerworks/library/l-lpic1-v3-101-3/
-
-
-
-
-
 
