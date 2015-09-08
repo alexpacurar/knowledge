@@ -58,8 +58,9 @@ After kernel boot the first user-space application is started. This is **init**,
 Runlevels define what users can accomplish in the current state. Every linux system supports three basic run levels plus one or more for normal operation. 
 
 *	**Basic**
-| level|purpose|
-|------|-------|
+
+| level|purpose         |
+|------|----------------|
 |0     |Shutdown, halt  |  
 |1     |Single user mode|
 |6     |Reboot          |
@@ -67,8 +68,9 @@ Runlevels define what users can accomplish in the current state. Every linux sys
 Beyond the basics, runlevel usage differs among distributions. The following is just and example.
 
 * **Extended**
-|level|purpose|
-|-----|-------|
+
+|level|purpose                             |
+|-----|------------------------------------|
 |2    |Multiuser mode without networking   |
 |3    |Multiuser mode with networking      |
 |5    |Multiuser mode with networking and X|
