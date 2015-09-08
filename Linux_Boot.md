@@ -119,7 +119,7 @@ The other major player(and scurge of the linuxsphere) is systemd. Systemd create
 In the same vein the mount points are made available instantly via autofs, but are actually mounted only happens when a process accesses that mount point.
 
 
-**TL;RD**
+**TL;DR**
 ------------------------------------------
 When a system is first booted, or is reset, the processor executes code at a well-known location. In a personal computer (PC), this location is in the basic input/output system (BIOS), which is stored in flash memory on the motherboard. The central processing unit (CPU) in an embedded system invokes the reset vector to start a program at a known address in flash/ROM. In either case, the result is the same. Because PCs offer so much flexibility, the BIOS must determine which devices are candidates for boot. We'll look at this in more detail later.
 
