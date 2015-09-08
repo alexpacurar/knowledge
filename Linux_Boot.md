@@ -41,7 +41,9 @@ Linux files systems, meaning the kernel can reside on ext2/ext3 file systems.
 With the kernel loaded in memory the next stage begins. The first step is decompressing the kernel, because as remembered from the Gentoo days it is a bzimage.
 The first section of this file contains a routine which does some minimal hardware setup, decompresses the kernel, and loads it into **high** memory. It also moves the intird disk, if present, for later use. After this the routine calls the kernel and the kernel boot begins
 The routine looks like the following, and it is in essence the main function for the kernel:
+
 ![](http://www.ibm.com/developerworks/library/l-linuxboot/fig3.gif)
+
 The second **statrup_32()** function is also called process 0 (swapper), because it initializes the page tables and it enables memory paging.
 **start_kernel** does a lot of initialization to set up interrupts, perform further memory configuration, and load the initial RAM disk. In the end, a call is made to **kernel_thread** to start the **init** function, which is the first user-space process. Finally, the idle task is started and the scheduler can now take control (after the call to **cpu_idle**). With interrupts enabled, the pre-emptive scheduler periodically takes control to provide multitasking.
 Stage 2 loaded and mounted the intird, so now that disk is used as a temporary root file system, until the root file system for the disk is ready. This is useful because the kernel can fully boot without mounting any disks so it doesn't require code to handle different disk drivers. After the boot the root file system is pivoted **pivot__root** and intird is unmounted.
