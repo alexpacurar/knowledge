@@ -130,7 +130,8 @@ When the second-stage boot loader is in RAM and executing, a splash screen is co
 That's Linux boot in a nutshell. Now let's dig in a little further and explore some of the details of the Linux boot process.
 
 **Resources**
-http://www.ibm.com/developerworks/library/l-linuxboot/
 
-http://www.ibm.com/developerworks/library/l-lpic1-v3-101-3/
+* http://www.ibm.com/developerworks/library/l-linuxboot/
+
+* http://www.ibm.com/developerworks/library/l-lpic1-v3-101-3/
 
