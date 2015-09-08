@@ -92,6 +92,7 @@ the file has the following structure:
 
 	id:runlevels:action:process
 The available actions are:
+
 |action| description|
 |-----------|-------------------------------------------| 
 |respawn|	Restart the process whenever it terminates. Usually used for getty processes, which monitor for logins.|
@@ -99,6 +100,7 @@ The available actions are:
 |once|	Start the process once when the specified runlevel is entered.|
 |initdefault|	Specifies the runlevel to enter after system boot.|
 |ctrlaltdel|	Execute the associated process when init receives the SIGINT signal, for example, when someone on the system console presses CTRL-ALT-DEL. |
+
 **Initialization scripts**
 Initialization scripts are called in the following way:
 
